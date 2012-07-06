@@ -1,0 +1,37 @@
+'''
+Created on 2012-7-4
+
+@author: jacob
+'''
+
+if __name__ == '__main__':
+    pass
+
+def sayHello():
+    print 'Hello World!' # block belonging to the function
+
+sayHello() 
+
+def printMax(a, b):
+    if a > b:
+        print a, 'is maximum'
+    else:
+        print b, 'is maximum'
+
+printMax(3, 4) # directly give literal values
+
+x = 5
+y = 7
+
+printMax(x, y) 
+
+def func():
+    global x
+
+    print 'x is', x
+    x = 2
+    print 'Changed local x to', x
+
+x = 50
+func()
+print 'Value of x is', x

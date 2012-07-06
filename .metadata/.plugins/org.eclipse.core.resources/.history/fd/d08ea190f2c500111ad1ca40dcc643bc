@@ -1,0 +1,53 @@
+'''
+Created on 2012-7-4
+
+@author: jacob
+'''
+
+if __name__ == '__main__':
+    pass
+
+def sayHello():
+    print 'Hello World!' # block belonging to the function
+
+sayHello() 
+
+def func():
+    global x
+
+    print 'x is', x
+    x = 2
+    print 'Changed local x to', x
+
+x = 50
+func()
+print 'Value of x is', x
+
+
+
+def say(message, times = 1):
+    print message * times
+
+say('Hello')
+say('World', 5)
+
+def fuck(times,message):
+    print times*message
+
+fuck(5,'news')
+
+
+def printMax(x,y):
+    x=int(x)
+    y=int(y)
+    if x>y:
+        print x,
+    else:
+        print y,
+    
+
+x = hello
+y = fuck
+
+printMax(x, y) 
+
